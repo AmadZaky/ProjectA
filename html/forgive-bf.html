@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgive ur BF</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function increaseButtonSize() {
+            const yesButton = document.getElementById('yesButton');
+            const currentSize = parseFloat(window.getComputedStyle(yesButton).fontSize);
+            yesButton.style.fontSize = (currentSize + 10) + 'px';
+        }
+    </script>
+</head>
+<body>
+    <div class="forgive-bf">
+        <button onclick="window.location.href='index.html'" style="position: absolute; top: 10px; left: 10px;">Back</button>
+        <h1 style="font-size: 3em;">I'm Sorry!</h1>
+        <p>Every relationship has its ups and downs. I hope we can move past this together.</p>
+        <p>Thank you for your understanding and love!</p>
+        <div class="button-container">
+            <button id="yesButton" onclick="window.location.href='thank-you.html'">Yes, I forgive you</button>
+            <button onclick="increaseButtonSize()">Maybe later</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
