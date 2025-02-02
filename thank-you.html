@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="thank-you">
+        <button onclick="window.location.href='index.html'" style="position: absolute; top: 10px; left: 10px;">Back</button>
+        <img src="css\images\White Cat Hello GIF.gif" alt="toel toel" class="gif" style="width: 320px; height: auto;">
+        <h1>TIMEEEKACII SAYAAANG!!</h1>
+        <audio id="audio">
+            <source src="audio/yung kai - blue (Official Audio).mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <button id="playButton">Teneneng amek anthem</button>
+    </div>
+
+    <script>
+        const audio = document.getElementById('audio');
+        const playButton = document.getElementById('playButton');
+
+        playButton.addEventListener('click', function() {
+            audio.play();
+        });
+    </script>
+</body>
+</html>
